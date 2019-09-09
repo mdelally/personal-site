@@ -1,15 +1,20 @@
 <template>
-  <Layout>
-    <div class="post-title">
-      <h1>{{ $page.post.title }}</h1>
-      <p>{{ $page.post.date }} | {{ $page.post.timeToRead }} min read</p>
-    </div>
-
-    <div class="post-content">
-      <p v-html="$page.post.content" />
-    </div>
-  </Layout>
+  <Internal>
+    <blog-container :post="$page.post">
+      <div class="content" v-html="$page.post.content" />
+    </blog-container>
+  </Internal>
 </template>
+
+<script>
+import BlogContainer from "@/layouts/partials/BlogContainer.vue";
+
+export default {
+  components: {
+    BlogContainer
+  }
+};
+</script>
 
 <page-query>
   query Post ($path: String!) {
@@ -17,7 +22,7 @@
     id
     title
     content
-    date (format: "D MMMM YYYY")
+    date (format: "MMMM D, YYYY")
     timeToRead
   }
 }

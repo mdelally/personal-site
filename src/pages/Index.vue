@@ -1,33 +1,35 @@
 <template>
-  <Layout>
-    
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-    
-    <h1>Hello, world!</h1>
-   
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
+  <Homepage>
+    <p
+      class="md:text-3xl text-xl mb-8"
+    >Hey! I'm Michael DeLally, a mutlimedia artist and programmer from Clearwater, Florida.</p>
+
+    <p class="md:text-3xl text-xl mb-8">
+      I'm the owner of
+      <a href="https://thought-reactor.net">Thought Reactor</a>, a super small video game studio that focuses on fun experimental and puzzle games.
     </p>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
+    <p class="md:text-3xl text-xl mb-8">
+      I've made several small games that
+      <a
+        href="https://thoughtreactor.itch.io"
+      >you can play in your browser</a> right now. Most of which were made in under 72 hours for various game jam competitions.
     </p>
 
-  </Layout>
+    <p class="md:text-3xl text-xl mb-8">
+      Ever since I was 11 years old I have been enthralled by web development. Professionally, I work in the eCommerce industry as a front-end developer. In my spare time I like making little sites and apps using
+      <a
+        href="https://vuejs.org"
+      >Vue.js</a> and
+      <a href="https://laravel.com">Laravel</a>.
+    </p>
+  </Homepage>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Home"
   }
-}
+};
 </script>
-
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>

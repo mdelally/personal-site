@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Archivo:400,400i,700&display=swap");
+
+body {
+  font-family: "Archivo", sans-serif;
+  background-color: black;
+  @apply text-gray-0;
+}
+
+.container {
+  max-width: 900px;
+}
+
+g-link,
+a {
+  color: #ec3b14;
+  text-decoration: underline;
+  padding: 2px;
+  transition: all 0.1s ease-in-out;
+}
+
+g-link:hover,
+a:hover {
+  color: #c41300;
+  background-color: #111111;
+}
+
+a.active--exact {
+  @apply text-brand-500;
+  @apply border-brand-500;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+}
+
+header {
+  font-family: "Archivo Black", sans-serif;
+}
+
+footer > nav {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.offset-2 {
+  position: relative;
+  top: 2px;
+}
+
+.offset-minus-2 {
+  position: relative;
+  top: -2px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+.fade-enter /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateX(-16px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(16px);
+}
+
+.btn {
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+}

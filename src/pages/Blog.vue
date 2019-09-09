@@ -1,17 +1,17 @@
 <template>
-  <Layout>
-    <h1>Blog</h1>
-
-    <section class="posts">
+  <Internal>
+    <page-container title="Blog">
       <PostList v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
-    </section>
-  </Layout>
+    </page-container>
+  </Internal>
 </template>
 
 <script>
+import PageContainer from "@/layouts/partials/PageContainer.vue";
 import PostList from "@/components/PostList";
 export default {
   components: {
+    PageContainer,
     PostList
   },
   metaInfo: {
@@ -34,7 +34,7 @@ query {
         title
         timeToRead
         description
-        date (format: "D MMMM YYYY")
+        date (format: "MMMM D, YYYY")
         path
       }
     }
