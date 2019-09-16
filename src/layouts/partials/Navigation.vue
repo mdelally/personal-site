@@ -15,7 +15,7 @@
         <g-link
           v-for="(item, index) in navItems"
           :key="'nav_' + index"
-          class="px-6 py-8 font-bold text-xl text-gray-0 hover:text-brand-700 border-b-2 border-transparent hover:border-brand-700 uppercase offset-2 no-underline hover:bg-transparent"
+          class="px-6 py-8 font-bold text-xl text-gray-0 hover:text-brand-500 border-b-2 border-transparent hover:border-brand-500 uppercase offset-2 no-underline hover:bg-transparent"
           :to="item.route"
         >{{ item.label }}</g-link>
       </nav>
