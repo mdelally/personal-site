@@ -1,4 +1,5 @@
 import "@/main.css";
+import "@/content.scss";
 import "prismjs/themes/prism-tomorrow.css";
 
 import Homepage from "~/layouts/Homepage.vue";

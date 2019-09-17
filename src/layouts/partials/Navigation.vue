@@ -31,7 +31,7 @@ export default {
       navItems: [
         { label: "Home", route: "/" },
         { label: "Blog", route: "/blog" },
-        { label: "Work", route: "/about" }
+        { label: "Work", route: "/work" }
       ]
     };
   }

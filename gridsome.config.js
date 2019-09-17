@@ -12,6 +12,9 @@ module.exports = {
       }
     },
     {
+      use: "gridsome-plugin-purgecss"
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
         path: "blog/**/*.md",

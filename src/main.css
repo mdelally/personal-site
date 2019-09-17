@@ -25,8 +25,7 @@ a:hover {
 }
 
 a.active--exact {
-  @apply text-brand-500;
-  @apply border-brand-500;
+  @apply text-brand-500 border-brand-500;
 }
 
 h1,

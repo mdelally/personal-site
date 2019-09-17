@@ -14,7 +14,8 @@
   "devDependencies": {
     "@gridsome/remark-prismjs": "^0.1.0",
     "@gridsome/source-filesystem": "^0.5.0",
-    "@gridsome/transformer-remark": "^0.3.2",
-    "gridsome-plugin-tailwindcss": "^2.2.24"
+    "@gridsome/transformer-remark": "^0.3.3",
+    "gridsome-plugin-purgecss": "^1.0.12",
+    "gridsome-plugin-tailwindcss": "^2.2.25"
   }
 }
